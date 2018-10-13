@@ -17,7 +17,7 @@ public class KafkaAvroJavaConsumerV1Demo {
         // normal consumer
         properties.setProperty("bootstrap.servers","127.0.0.1:9092");
         properties.put("group.id", "customer-consumer-group-v1");
-        properties.put("auto.commit.enable", "false");
+        properties.put("enable.auto.commit", "false");
         properties.put("auto.offset.reset", "earliest");
 
         // avro part (deserializer)

@@ -39,16 +39,15 @@ public class KafkaAvroJavaProducerV1Demo {
         );
 
         System.out.println(customer);
-        producer.send(producerRecord, new Callback() {
-            @Override
-            public void onCompletion(RecordMetadata metadata, Exception exception) {
-                if (exception == null) {
-                    System.out.println(metadata);
-                } else {
-                    exception.printStackTrace();
+        producer.send(producerRecord,
+                (RecordMetadata metadata, Exception exception) -> {
+                    if (exception == null) {
+                        System.out.println(metadata);
+                    } else {
+                        exception.printStackTrace();
+                    }
                 }
-            }
-        });
+        );
 
         producer.flush();
         producer.close();
