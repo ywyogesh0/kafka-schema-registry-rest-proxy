@@ -1,0 +1,8 @@
+com/example/Customer$1.class
+com/examples/avro/Constants.class
+com/example/Customer.class
+com/examples/avro/KafkaAvroProducerV1Example.class
+com/example/Customer$Builder.class
+com/github/simplesteph/kafka/apps/v1/KafkaAvroJavaConsumerV1Demo.class
+com/github/simplesteph/kafka/apps/v1/KafkaAvroJavaProducerV1Demo.class
+com/examples/avro/KafkaAvroConsumerV1Example.class
